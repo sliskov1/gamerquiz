@@ -116,18 +116,20 @@ input {
 .incorrect{
     background: red;
 }
-
-/* Heads up display */
-
-.hud-first {
+#hud {
     display: flex;
-    justify-content: flex-start;
+}
+.hud-first {
+    position: absolute;
+    left: 30px;
+    top: 30px;
 }
 .hud-second {
     display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    right: 30px;
+    top: 30px;
 }
-
 #qnumber {
     font-size: 1.3rem;
     position: relative;
@@ -137,6 +139,7 @@ input {
 .hud-prefix {
     font-size: 1.3rem;
     padding-right: 5px;
+    margin-right: auto;
 }
 
 #question {
