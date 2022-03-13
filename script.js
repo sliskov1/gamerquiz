@@ -40,9 +40,9 @@ let questions = [
     {
         question: "What is the most expensive video game made to date?",
         choice1: 'Grand Theft Auto 5',
-        choice2: 'COD Modern Warfare 2',
+        choice2: 'The Last of Us',
         choice3: 'Cyberpunk',
-        choice4: 'Kingdom Come',
+        choice4: 'Read Dead Redemption 2',
         answer: 1,
     },
     {
@@ -106,14 +106,14 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('namepage.html');
+        return window.location.assign('end.html');
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`; // display question which increments by 1
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
-    question.innerText = currentQuestion.question
+    question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];
