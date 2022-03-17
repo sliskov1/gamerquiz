@@ -10,12 +10,13 @@
 <body>
     <div class = "container">
         <div id = "name">
-            <h3>Before you start the quiz can I ask you for your name?</h3>
-            <form action="questions.html">
-                <input type ="text" id ="username" placeholder="Enter your name" required="required">
-                <button type="submit" value="Continue" class="btnstart">Continue</button>
-            </form>
+            <!--<h3>Enter your name</h3> -->
+           <form action="end.html">
+                <input type ="text" id="username" placeholder="Enter your name" required="required">
+                <button onclick="myFunction()" type="submit" value="Continue" class="btnstart">Continue</button>
+          </form>
         </div>
+        <h3 id="examplename"></h3>
     </div>
     <script src="./end.js"></script>
 </body>

@@ -50,7 +50,7 @@ h3 {
 .btnstart {
     font-size: 2rem;
     padding: 1rem;
-    margin: 0 auto;
+    margin: 20px;
     background-color: #2b2a29;
     width: 14vw;
     border-radius: 4px;
@@ -153,6 +153,11 @@ form {
 
 #inputname::after {
     border: 1px solid red;
+}
+
+#btnhome {
+    position: absolute;
+    top:  120px;
 }
 
 @media screen and (max-width: 768px) {
